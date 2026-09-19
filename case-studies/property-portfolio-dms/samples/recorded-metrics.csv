@@ -1,0 +1,14 @@
+Workstream,Metric,Value,EvidenceType
+HotelProduction,SourceFiles,1305,Recorded aggregate
+HotelProduction,TargetFiles,1305,Recorded aggregate
+HotelProduction,FilesProcessed,1305,Recorded aggregate
+HotelProduction,MetadataPassReported,1305,Recorded aggregate
+HotelProduction,MetadataReviewReported,0,Recorded aggregate
+HotelProduction,UnresolvedUserFields,22,Recorded aggregate
+HotelProduction,MissingFiles,0,Recorded aggregate
+HotelProduction,ExtraFiles,0,Recorded aggregate
+HotelProduction,ProcessingErrors,0,Recorded aggregate
+CommercialDryRun,FilesEvaluated,18349,Recorded aggregate
+CommercialDryRun,FilesPlanned,18349,Recorded aggregate
+CommercialDryRun,Errors,0,Recorded aggregate
+CommercialReadiness,Failures,0,Recorded aggregate

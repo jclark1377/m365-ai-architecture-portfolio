@@ -1,0 +1,8 @@
+{
+  "EvidenceType": "Synthetic example; not an execution record",
+  "Status": "Ready",
+  "ProvisioningReady": true,
+  "MigrationReady": true,
+  "Failures": 0,
+  "ValidationErrors": []
+}

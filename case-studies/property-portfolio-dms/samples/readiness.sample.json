@@ -1,0 +1,18 @@
+[
+  {
+    "Check": "SiteConnection",
+    "Status": "PASS"
+  },
+  {
+    "Check": "Owners",
+    "Status": "PASS"
+  },
+  {
+    "Check": "HubAssociation",
+    "Status": "PASS"
+  },
+  {
+    "Check": "Libraries",
+    "Status": "PASS"
+  }
+]
