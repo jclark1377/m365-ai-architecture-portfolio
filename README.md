@@ -4,6 +4,20 @@
 
 I focus on connecting business processes, governed information, and practical automation across Microsoft 365. This portfolio brings together architecture patterns for SharePoint, Power Platform, Copilot Studio, and AI systems using retrieval-augmented generation (RAG) and the Model Context Protocol (MCP).
 
+## Experience and delivery highlights
+
+**21+ years across enterprise IT, Microsoft cloud, automation, and solution architecture.**
+
+- **Production Help Desk Copilot:** Copilot Studio with SharePoint knowledge and automated ManageEngine ServiceDesk ticket creation.
+- **162 Power Automate flows:** Migrated from individual ownership to centralized governance using Solutions and connection references.
+- **Approximately 800 SharePoint sites:** Governance covering ownership, lifecycle, permissions, metadata, and compliance visibility.
+- **90.7% enterprise recovery:** 12,302 of 13,558 items recovered, with repeatable validation and remediation procedures.
+- **Consulting DMS:** Multi-site provisioning and migration planning for approximately 115,000 source files / 347 GB. Migration remains in progress; current work includes resumable Azure Automation processing and metadata reconciliation.
+
+**[Read career projects and case studies →](case-studies/README.md)**
+
+Covers Warren Averett, The Cyber Consultants, Missile Defense Agency, Lockheed Martin, SAIC, Birmingham-Jefferson County Transit Authority, Avenu Insights, and Cunningham Pathology. Results and scale are drawn from my resume and project records; status and measurement limits are documented in the case studies.
+
 ## Featured project — TCC Core MCP
 **A reference architecture for governed AI access to enterprise knowledge and business tools.**
 
@@ -20,7 +34,7 @@ TCC Core MCP explores a shared tool layer between AI experiences and approved Mi
 | [Power Platform](power-platform/README.md) | Intake and approval automation, environment strategy, and release controls |
 | [Copilot & AI](copilot-ai/README.md) | Copilot Studio design, permission-aware RAG, and evaluation |
 | [Governance](governance/README.md) | Access, data protection, operational ownership, and publication review |
-| [Case studies](case-studies/README.md) | Generalized solution scenarios and an evidence-based case-study format |
+| [Case studies](case-studies/README.md) | Career projects, delivery results, current work, and separately labeled solution scenarios |
 
 ## Approach
 1. **Understand the work.** Map users, information, constraints, and success criteria.
@@ -29,7 +43,7 @@ TCC Core MCP explores a shared tool layer between AI experiences and approved Mi
 4. **Operate deliberately.** Include monitoring, support, change control, and recovery from the outset.
 
 ## About these artifacts
-This initial release contains architecture documentation and illustrative solution scenarios. TCC Core MCP is presented as a proposed reference design; this repository does not yet contain a runnable MCP server or deployment package. Outcomes and performance improvements are not claimed without supporting evidence.
+This portfolio combines professional experience summaries, architecture documentation, and illustrative solution scenarios. Career results are reported from my resume and project records; internal implementation evidence is not published. TCC Core MCP remains a proposed reference design, not a runnable server or deployment package. Employer-owned source code, customer data, credentials, tenant identifiers, and private endpoints are excluded.
 
 All examples are generalized for public sharing. No customer identities, tenant identifiers, credentials, private endpoints, or confidential customer data are included.
 
