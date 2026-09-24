@@ -4,6 +4,12 @@
 
 Selected work across enterprise IT, Microsoft 365, applied AI, and independent consulting. These are professional experience summaries based on my resume and project records, updated September 20, 2026. They describe my contribution; employer-owned implementations and internal evidence are not distributed in this repository. Reference designs are labeled separately.
 
+## Power Apps case studies
+
+**[Power Apps & Power Platform collection](../power-platform/README.md)** — [Audit Engagement Letter app](../power-platform/audit-engagement-letter/README.md), [employee recognition](../power-platform/employee-recognition/README.md), and [tax-service intake](../power-platform/tax-service-intake/README.md).
+
+The collection adds control-level examples, generalized architecture and SharePoint schemas, Power Automate integration, DEV/UAT/PROD practices, and test scenarios. Reported delivery, observed configuration, and illustrative patterns are labeled separately; recognition and tax-intake acceptance remain open.
+
 ## Project highlights
 
 | Work | Contribution and scale | Status |
