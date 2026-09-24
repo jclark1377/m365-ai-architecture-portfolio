@@ -17,11 +17,11 @@ The catalog separates related workstreams to make the breadth of Jay's work visi
 | Information governance | Purview retention and lifecycle design | Deployment reported; policy exports not reviewed | [Information governance](projects/information-governance.md) |
 | Innovation intake | Teams, SharePoint, Copilot Studio, and workflow routing | Implementation reported in resume | [Business solutions](projects/business-solutions.md) |
 | Reporting | Power BI and Power Automate reporting | Implementation reported; no measured refresh SLA | [Business solutions](projects/business-solutions.md) |
-| Employee recognition | Power Apps form, approvals, rejection comments, Teams publishing | App/flow code and test messages reviewed; later corrections pending | [Recognition](projects/recognition-workflow.md) |
-| Tax-service intake | SharePoint request queue, assignment and completion notifications | Runtime payloads and failures reviewed; end-to-end acceptance not established | [Tax intake](projects/tax-intake.md) |
+| Employee recognition | Power Apps form, approvals, rejection comments, Teams publishing | App/flow code and test messages reviewed; later corrections pending | [Recognition](../../power-platform/employee-recognition/README.md) |
+| Tax-service intake | SharePoint request queue, assignment and completion notifications | Runtime payloads and failures reviewed; end-to-end acceptance not established | [Tax intake](../../power-platform/tax-service-intake/README.md) |
 | Advisory notifications | New-record messages, changed-status messages, version inspection | Flow snippets and runtime errors reviewed; latest payload correction unconfirmed | [Advisory automation](projects/advisory-notifications.md) |
 | Knowledge-base publishing | News classification, page inspection, web-part source diagnosis | Command output reviewed; final homepage confirmation not present | [Publishing support](projects/knowledge-base-publishing.md) |
-| Engagement Letter workflow | Power Apps, SharePoint and Power Automate solution | Built solution reported in latest resume; detailed acceptance evidence unavailable | [Project entry](projects/engagement-letter.md) |
+| Engagement Letter workflow | Power Apps, SharePoint and Power Automate solution | Built solution reported; preparer control configuration reviewed; final acceptance unavailable | [Project entry](../../power-platform/audit-engagement-letter/README.md) |
 
 ## Items needing more source material
 The Engagement Letter entry now reflects the latest resume’s built-solution claim. Specific document-generation/signature features and final acceptance are not inferred.
