@@ -1,8 +1,18 @@
 # Jonathan “Jay” Clark
-### Microsoft 365 • Enterprise Architecture • Applied AI
+### Microsoft 365 • Power Apps & Power Platform • Enterprise Architecture • Applied AI
 **The Cyber Consultants**
 
 I focus on connecting business processes, governed information, and practical automation across Microsoft 365. This portfolio brings together architecture patterns for SharePoint, Power Platform, Copilot Studio, and AI systems using retrieval-augmented generation (RAG) and the Model Context Protocol (MCP).
+
+## Featured Power Apps & Power Platform work
+
+**[Explore Power Apps case studies →](power-platform/README.md)**
+
+- **[Audit Engagement Letter app](power-platform/audit-engagement-letter/README.md):** Legacy form modernization with Power Apps, SharePoint, and Power Automate; approximately 65 fields and eight screens reported, with a concrete group-backed person-picker example.
+- **[Employee recognition](power-platform/employee-recognition/README.md):** Nomination intake, approvals, rejection feedback, and Teams publishing; later presentation changes remain in testing.
+- **[Tax-service intake](power-platform/tax-service-intake/README.md):** Request capture, multi-select data shaping, assignment/completion notifications, and documented troubleshooting; end-to-end acceptance remains open.
+
+For recruiters and freelance clients: business requirements, architecture, SharePoint data models, Power Fx controls, Power Automate integration, DEV/UAT/PROD release practices, testing, and results are collected in one place. Examples are sanitized and distinguish observed implementation from recommended patterns.
 
 ## Experience and delivery highlights
 
@@ -31,7 +41,7 @@ TCC Core MCP explores a shared tool layer between AI experiences and approved Mi
 | [Architecture](architecture/README.md) | Integration boundaries, decision records, and delivery principles |
 | [TCC Core MCP](mcp/tcc-core-mcp/README.md) | Featured design, proposed tool contracts, and validation scenarios |
 | [SharePoint enterprise DMS](sharepoint/enterprise-dms/README.md) | Information architecture, document lifecycle, and migration runbook |
-| [Power Platform](power-platform/README.md) | Intake and approval automation, environment strategy, and release controls |
+| [Power Apps & Power Platform](power-platform/README.md) | Engagement-letter, recognition, and tax-intake case studies; Power Fx, SharePoint models, workflows, ALM, and testing |
 | [Copilot & AI](copilot-ai/README.md) | Copilot Studio design, permission-aware RAG, and evaluation |
 | [Governance](governance/README.md) | Access, data protection, operational ownership, and publication review |
 | [Case studies](case-studies/README.md) | Career projects, delivery results, current work, and separately labeled solution scenarios |
