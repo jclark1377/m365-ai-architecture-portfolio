@@ -9,9 +9,11 @@ My experience brings together Power Automate governance, Power Apps business sol
 
 **Business problem:** Individually owned automation creates dependencies on the continued availability of each owner and their connections. A maintainable estate needs deliberate ownership and deployment practices.
 
-**My contribution:** Migrated 162 Power Automate flows from individual ownership to centralized service-account governance using Solutions and connection references. The career record also describes PowerShell-driven deployment work.
+**My contribution:** Reorganized 162 Power Automate flows without disrupting production and created a dedicated flow service account to centralize ownership. Moved automation away from dependence on individual employees’ accounts, using Solutions and connection references to support maintainability. The career record also describes PowerShell-driven deployment work.
 
-**Result:** Reduced individual-user dependency and improved maintainability through centralized ownership and reusable connection references. The 162-flow figure is reported in career records; no downtime reduction, incident-rate improvement, or cost saving is inferred.
+**Result:** Maintained production continuity during the reorganization while establishing centralized flow ownership and reducing dependency on individual employees’ accounts. The 162-flow scope is reported in career records; the dedicated-account creation and continuity outcome are confirmed by my project account. No availability percentage, incident-rate reduction, or cost saving is claimed.
+
+**Ownership model:** A dedicated flow service account provided a stable ownership identity for the automations. This reduced the risk of business processes depending on one employee’s account or continued employment.
 
 **Ownership relevance:** This work addresses how a portfolio of automations is maintained and supported over time. The scale describes the governed estate, not the flow count behind the three application case studies.
 
@@ -21,7 +23,7 @@ My experience brings together Power Automate governance, Power Apps business sol
 
 | Area | Documented contribution | Relevance to platform ownership |
 | --- | --- | --- |
-| Automation governance | 162-flow ownership migration, Solutions, connection references | Maintainable ownership and deployment structure |
+| Automation governance | 162-flow reorganization without production disruption; dedicated flow service account, Solutions, and connection references | Production continuity and centralized ownership |
 | Business applications | Engagement-letter modernization, recognition, and tax intake | Connecting business requirements to supported applications |
 | Production integration | Copilot Studio help desk with SharePoint knowledge and automated ticket creation | Operating across service boundaries and human escalation |
 | Information governance | Approximately 800 SharePoint sites covering ownership, permissions, lifecycle, metadata, and compliance visibility | Managing a major data and access dependency for Microsoft 365 solutions |
