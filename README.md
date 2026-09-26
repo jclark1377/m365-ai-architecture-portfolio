@@ -1,8 +1,21 @@
 # Jonathan “Jay” Clark
-### Microsoft 365 • Power Apps & Power Platform • Enterprise Architecture • Applied AI
+### Power Platform Governance & Delivery • Microsoft 365 • Enterprise Architecture • Applied AI
 **The Cyber Consultants**
 
 I focus on connecting business processes, governed information, and practical automation across Microsoft 365. This portfolio brings together architecture patterns for SharePoint, Power Platform, Copilot Studio, and AI systems using retrieval-augmented generation (RAG) and the Model Context Protocol (MCP).
+
+## Power Platform governance and operational delivery
+
+My Power Platform work combines governance across an automation estate with hands-on business application delivery and enterprise Microsoft 365 operations.
+
+- **162-flow governance transformation:** Migrated individually owned Power Automate flows to centralized service-account governance using Solutions and connection references, reducing dependency on individual users and improving maintainability.
+- **Production service integration:** Deployed a Copilot Studio help desk solution with approved SharePoint knowledge and automated ticket creation.
+- **Business application delivery:** Built engagement-letter, recognition, and tax-intake solutions using Power Apps, SharePoint, and Power Automate; current acceptance status is documented per project.
+- **Enterprise operational foundation:** SharePoint governance across approximately 800 sites, identity and permissions experience, recovery procedures, and repeatable migration automation.
+
+**[Explore platform ownership experience →](power-platform/platform-ownership.md)** · [Application case studies](power-platform/README.md)
+
+**Open to Power Platform Owner, Technical Platform Owner, Power Platform Lead, and Microsoft 365 / Solutions Architecture opportunities.**
 
 ## Featured Power Apps & Power Platform work
 
