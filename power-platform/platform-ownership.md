@@ -9,15 +9,21 @@ My experience brings together Power Automate governance, Power Apps business sol
 
 **Business problem:** Individually owned automation creates dependencies on the continued availability of each owner and their connections. A maintainable estate needs deliberate ownership and deployment practices.
 
-**My contribution:** Reorganized 162 Power Automate flows without disrupting production and created a dedicated flow service account to centralize ownership. Moved automation away from dependence on individual employees’ accounts, using Solutions and connection references to support maintainability. The career record also describes PowerShell-driven deployment work.
+**My contribution:** Reorganized 162 Power Automate flows without disrupting production and created a dedicated flow service account to centralize ownership. Recovered flows whose original owners had left and brought them under the dedicated flow account. Moved automation away from dependence on individual employees’ accounts, using Solutions and connection references to support maintainability. The career record also describes PowerShell-driven deployment work.
 
-**Result:** Maintained production continuity during the reorganization while establishing centralized flow ownership and reducing dependency on individual employees’ accounts. The 162-flow scope is reported in career records; the dedicated-account creation and continuity outcome are confirmed by my project account. No availability percentage, incident-rate reduction, or cost saving is claimed.
+**Result:** Maintained production continuity during the reorganization while establishing centralized flow ownership and reducing dependency on individual employees’ accounts. The 162-flow scope is reported in career records; the dedicated-account creation, recovery of flows belonging to departed owners, and continuity outcome are confirmed by my project account. No availability percentage, incident-rate reduction, or cost saving is claimed.
 
 **Ownership model:** A dedicated flow service account provided a stable ownership identity for the automations. This reduced the risk of business processes depending on one employee’s account or continued employment.
 
 **Ownership relevance:** This work addresses how a portfolio of automations is maintained and supported over time. The scale describes the governed estate, not the flow count behind the three application case studies.
 
 [Career evidence](../case-studies/README.md#power-platform-governance-and-business-workflows) · [Evidence definitions](evidence-and-results.md)
+
+## Recovering flows after owner departures
+
+Recovered flows whose original owners had left the organization and brought them under the dedicated flow service account. This addressed continuity and maintainability risks when business automation depended on an individual employee’s account.
+
+The recovery work formed part of the broader governance effort. The number of affected flows is not separately quantified, and the 162-flow estate total should not be read as an orphaned-flow count. Specific recovery procedures and migration checks are not detailed in the available project account.
 
 ## Delivery and operations across the platform
 
