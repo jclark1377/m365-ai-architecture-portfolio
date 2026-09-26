@@ -8,7 +8,7 @@ I focus on connecting business processes, governed information, and practical au
 
 My Power Platform work combines governance across an automation estate with hands-on business application delivery and enterprise Microsoft 365 operations.
 
-- **162-flow governance transformation:** Reorganized 162 Power Automate flows without disrupting production and created a dedicated flow service account to centralize ownership. Used Solutions and connection references to reduce reliance on individual employees’ accounts and improve maintainability.
+- **162-flow governance transformation:** Reorganized 162 Power Automate flows without disrupting production and created a dedicated flow service account to centralize ownership. Recovered flows whose original owners had left and brought them under the dedicated account. Used Solutions and connection references to reduce reliance on individual employees’ accounts and improve maintainability.
 - **Production service integration:** Deployed a Copilot Studio help desk solution with approved SharePoint knowledge and automated ticket creation.
 - **Business application delivery:** Built engagement-letter, recognition, and tax-intake solutions using Power Apps, SharePoint, and Power Automate; current acceptance status is documented per project.
 - **Enterprise operational foundation:** SharePoint governance across approximately 800 sites, identity and permissions experience, recovery procedures, and repeatable migration automation.
