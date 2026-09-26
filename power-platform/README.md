@@ -1,9 +1,20 @@
-# Power Apps & Power Platform
+# Power Platform Governance, Operations & Application Delivery
 [Back to portfolio](../README.md)
 
-**Business applications, SharePoint data design, Power Fx, workflow integration, and governed delivery.**
+**Automation governance, maintainable ownership, enterprise integration, and business applications.**
 
 My work connects Power Apps forms to structured SharePoint records and Power Automate processes. These case studies show requirements translation, form controls, data shaping, workflow troubleshooting, and the operational practices needed to maintain business applications.
+
+## Power Platform governance and operational delivery
+
+My Power Platform work combines governance across an automation estate with hands-on business application delivery and enterprise Microsoft 365 operations.
+
+- **162-flow governance transformation:** Migrated individually owned Power Automate flows to centralized service-account governance using Solutions and connection references, reducing dependency on individual users and improving maintainability.
+- **Production service integration:** Deployed a Copilot Studio help desk solution with approved SharePoint knowledge and automated ticket creation.
+- **Business application delivery:** Built engagement-letter, recognition, and tax-intake solutions using Power Apps, SharePoint, and Power Automate; current acceptance status is documented per project.
+- **Enterprise operational foundation:** SharePoint governance across approximately 800 sites, identity and permissions experience, recovery procedures, and repeatable migration automation.
+
+**[Read the platform ownership overview](platform-ownership.md)** for contributions, outcomes, and supporting experience.
 
 ## Featured case studies
 
