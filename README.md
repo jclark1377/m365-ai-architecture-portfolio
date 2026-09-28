@@ -1,73 +1,113 @@
-# Jonathan “Jay” Clark
-### Power Platform Governance & Delivery • Microsoft 365 • Enterprise Architecture • Applied AI
-**The Cyber Consultants**
+<p align="center">
+  <img src="assets/portfolio-banner.svg" alt="Jonathan Jay Clark — Microsoft 365, Power Platform and Applied AI. Architecture into delivery." width="100%" />
+</p>
 
-I focus on connecting business processes, governed information, and practical automation across Microsoft 365. This portfolio brings together architecture patterns for SharePoint, Power Platform, Copilot Studio, and AI systems using retrieval-augmented generation (RAG) and the Model Context Protocol (MCP).
+<p align="center">
+  <strong><a href="evidence/README.md">PROJECT EVIDENCE</a> &nbsp; / &nbsp; <a href="power-platform/README.md">POWER PLATFORM</a> &nbsp; / &nbsp; <a href="case-studies/README.md">CASE STUDIES</a></strong>
+</p>
 
-## Power Platform governance and operational delivery
+# Architecture that connects to delivery.
 
-My Power Platform work combines governance across an automation estate with hands-on business application delivery and enterprise Microsoft 365 operations.
+I’m **Jonathan “Jay” Clark**. I connect business processes, governed information, and automation across Microsoft 365, Power Platform, and applied AI. This portfolio brings together the architecture, implementation details, and engineering methods behind that work.
 
-- **162-flow governance transformation:** Reorganized 162 Power Automate flows without disrupting production and created a dedicated flow service account to centralize ownership. Recovered flows whose original owners had left and brought them under the dedicated account. Used Solutions and connection references to reduce reliance on individual employees’ accounts and improve maintainability.
-- **Production service integration:** Deployed a Copilot Studio help desk solution with approved SharePoint knowledge and automated ticket creation.
-- **Business application delivery:** Built engagement-letter, recognition, and tax-intake solutions using Power Apps, SharePoint, and Power Automate; current acceptance status is documented per project.
-- **Enterprise operational foundation:** SharePoint governance across approximately 800 sites, identity and permissions experience, recovery procedures, and repeatable migration automation.
+**21+ years in enterprise IT** · **The Cyber Consultants** · **Open to platform leadership and solutions architecture opportunities**
 
-**[Explore platform ownership experience →](power-platform/platform-ownership.md)** · [Application case studies](power-platform/README.md)
+---
 
-**Open to Power Platform Owner, Technical Platform Owner, Power Platform Lead, and Microsoft 365 / Solutions Architecture opportunities.**
+## Explore the work
 
-## Featured Power Apps & Power Platform work
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**[Explore Power Apps case studies →](power-platform/README.md)**
+### 01 / SharePoint DMS
+**Architecture · PowerShell · Reconciliation**
 
-- **[Audit Engagement Letter app](power-platform/audit-engagement-letter/README.md):** Legacy form modernization with Power Apps, SharePoint, and Power Automate; approximately 65 fields and eight screens reported, with a concrete group-backed person-picker example.
-- **[Employee recognition](power-platform/employee-recognition/README.md):** Nomination intake, approvals, rejection feedback, and Teams publishing; later presentation changes remain in testing.
-- **[Tax-service intake](power-platform/tax-service-intake/README.md):** Request capture, multi-select data shaping, assignment/completion notifications, and documented troubleshooting; end-to-end acceptance remains open.
+Multi-site document management, destination readiness, migration planning, and scoped validation.
 
-For recruiters and freelance clients: business requirements, architecture, SharePoint data models, Power Fx controls, Power Automate integration, DEV/UAT/PROD release practices, testing, and results are collected in one place. Examples are sanitized and distinguish observed implementation from recommended patterns.
+**Evidence:** A recorded 1,305-file pilot, documented exceptions, and runnable synthetic samples. Broader rollout remains in progress.
 
-## Experience and delivery highlights
+[Explore case study →](case-studies/property-portfolio-dms/README.md) · [Run the samples](evidence/verification-guide.md)
 
-**21+ years across enterprise IT, Microsoft cloud, automation, and solution architecture.**
+</td>
+<td width="50%" valign="top">
 
-- **Production Help Desk Copilot:** Copilot Studio with SharePoint knowledge and automated ManageEngine ServiceDesk ticket creation.
-- **162 Power Automate flows:** Migrated from individual ownership to centralized governance using Solutions and connection references.
-- **Approximately 800 SharePoint sites:** Governance covering ownership, lifecycle, permissions, metadata, and compliance visibility.
-- **90.7% enterprise recovery:** 12,302 of 13,558 items recovered, with repeatable validation and remediation procedures.
-- **Consulting DMS:** Multi-site provisioning and migration planning for approximately 115,000 source files / 347 GB. Migration remains in progress; current work includes resumable Azure Automation processing and metadata reconciliation.
+### 02 / Power Platform governance
+**Ownership · Solutions · Operations**
 
-**[Read career projects and case studies →](case-studies/README.md)**
+Centralized automation ownership, recovery of flows belonging to departed owners, and maintainable connection references.
 
-Covers Warren Averett, The Cyber Consultants, Missile Defense Agency, Lockheed Martin, SAIC, Birmingham-Jefferson County Transit Authority, Avenu Insights, and Cunningham Pathology. Results and scale are drawn from my resume and project records; status and measurement limits are documented in the case studies.
+**Evidence:** Reported 162-flow governance transformation. Scope and production continuity are described in the project account.
 
-## Featured project — TCC Core MCP
-**A reference architecture for governed AI access to enterprise knowledge and business tools.**
+[Explore governance →](power-platform/platform-ownership.md) · [Claim PP-001](evidence/claim-register.md)
 
-TCC Core MCP explores a shared tool layer between AI experiences and approved Microsoft 365 services. The design emphasizes identity-aware retrieval, narrowly scoped operations, traceability, and human approval for consequential changes.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-**[Explore TCC Core MCP →](mcp/tcc-core-mcp/README.md)** · [Architecture decisions](architecture/README.md) · [Governance controls](governance/README.md)
+### 03 / Business applications
+**Power Apps · SharePoint · Power Automate**
 
-## Portfolio
-| Area | What you will find |
+Engagement-letter modernization, employee recognition, and tax-service intake with typed data and workflow integration.
+
+**Evidence:** Reviewed control behavior, generalized formulas, and troubleshooting. Acceptance status is documented per application.
+
+[Explore applications →](power-platform/README.md) · [View Power Fx](power-platform/power-fx-examples.md)
+
+</td>
+<td width="50%" valign="top">
+
+### 04 / AI & knowledge systems
+**Copilot Studio · RAG · MCP**
+
+Grounded support, controlled escalation, and proposed boundaries between AI reasoning, enterprise knowledge, and tool execution.
+
+**Evidence:** Reported help-desk delivery; separately labeled evaluation patterns and proposed MCP architecture.
+
+[Explore AI patterns →](copilot-ai/README.md) · [View MCP design](mcp/tcc-core-mcp/README.md)
+
+</td>
+</tr>
+</table>
+
+## Follow the evidence
+
+**[Open the Project Evidence Portfolio →](evidence/README.md)**
+
+A short path from a professional claim to its supporting material:
+
+**Claim → Architecture → Implementation → Verification → Results & limits**
+
+| Start with | What you can inspect |
 | --- | --- |
-| [Architecture](architecture/README.md) | Integration boundaries, decision records, and delivery principles |
-| [TCC Core MCP](mcp/tcc-core-mcp/README.md) | Featured design, proposed tool contracts, and validation scenarios |
-| [SharePoint enterprise DMS](sharepoint/enterprise-dms/README.md) | Information architecture, document lifecycle, and migration runbook |
-| [Power Apps & Power Platform](power-platform/README.md) | Engagement-letter, recognition, and tax-intake case studies; Power Fx, SharePoint models, workflows, ALM, and testing |
-| [Copilot & AI](copilot-ai/README.md) | Copilot Studio design, permission-aware RAG, and evaluation |
-| [Governance](governance/README.md) | Access, data protection, operational ownership, and publication review |
-| [Case studies](case-studies/README.md) | Career projects, delivery results, current work, and separately labeled solution scenarios |
+| [Evidence register](evidence/claim-register.md) | Seven stable IDs connecting contributions to artifacts and acceptance status |
+| [Offline verification](evidence/verification-guide.md) | Synthetic tests for mapping, readiness, reconciliation, and rejected inputs |
+| [DMS results](case-studies/property-portfolio-dms/outcomes.md) | Pilot metrics, unresolved historical identities, and measurement boundaries |
+| [Application testing](power-platform/testing-and-troubleshooting.md) | Failure scenarios, troubleshooting, and open acceptance work |
 
-## Approach
-1. **Understand the work.** Map users, information, constraints, and success criteria.
-2. **Design the boundaries.** Establish ownership, identity, permissions, and integration contracts.
-3. **Deliver incrementally.** Start with a narrow workflow and validate it with representative users.
-4. **Operate deliberately.** Include monitoring, support, change control, and recovery from the outset.
+## Engineering focus
 
-## About these artifacts
-This portfolio combines professional experience summaries, architecture documentation, and illustrative solution scenarios. Career results are reported from my resume and project records; internal implementation evidence is not published. TCC Core MCP remains a proposed reference design, not a runnable server or deployment package. Employer-owned source code, customer data, credentials, tenant identifiers, and private endpoints are excluded.
+| Microsoft 365 | Power Platform | Applied AI | Delivery |
+| --- | --- | --- | --- |
+| SharePoint information architecture | Power Apps & Power Fx | Copilot Studio | PowerShell & PnP |
+| Identity & access boundaries | Power Automate | Grounded knowledge & RAG | Microsoft Graph & APIs |
+| Governance & document lifecycle | Solutions & connection references | Controlled tool integration | Migration & reconciliation |
+| Operational ownership | Release & support practices | Evaluation patterns | Runbooks & recovery |
 
-All examples are generalized for public sharing. No customer identities, tenant identifiers, credentials, private endpoints, or confidential customer data are included.
+[Architecture decisions](architecture/README.md) · [Governance principles](governance/README.md) · [Career case studies](case-studies/README.md) · [GitHub profile](https://github.com/jclark1377)
 
-**Connect:** [github.com/jclark1377](https://github.com/jclark1377)
+<details>
+<summary><strong>How to read this portfolio</strong></summary>
+
+Public material includes reported professional experience, reviewed implementation details, historical aggregate results, synthetic code samples, and proposed reference designs. These categories are identified in the evidence register.
+
+The DMS pilot’s 1,305 files are distinct from the approximately 115,000-file / 347 GB broader source estate. Its path reconciliation does not establish full historical identity, version, permission, or byte-level verification. TCC Core MCP remains a proposed reference design. Application acceptance is not inferred from a diagram or formula example.
+
+Employer-owned source, customer records, credentials, tenant identifiers, and private endpoints are excluded. [Publication standard](evidence/artifact-template.md).
+
+</details>
+
+---
+
+**Jonathan “Jay” Clark** · Microsoft 365 / Power Platform / Enterprise AI & Solutions Architecture
