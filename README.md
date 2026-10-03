@@ -97,6 +97,65 @@ A short path from a professional claim to its supporting material:
 
 [Architecture decisions](architecture/README.md) · [Governance principles](governance/README.md) · [Career case studies](case-studies/README.md) · [GitHub profile](https://github.com/jclark1377)
 
+
+## Microsoft AI certifications
+
+- [Microsoft Certified: Agentic AI Business Solutions Architect Expert](https://learn.microsoft.com/api/credentials/share/en-us/JonathanClark-3652/CA6785E8D86C3C9B?sharingId=41029AD201067C66) — AB-100; earned October 2026.
+- [Microsoft Certified: Azure AI Apps and Agents Developer Associate](https://learn.microsoft.com/api/credentials/share/en-us/JonathanClark-3652/657991F755E41849?sharingId=41029AD201067C66) — AI-103; earned October 2026.
+
+The links open Microsoft Learn credential verification pages.
+
+## Foundry, document intelligence, and sales knowledge
+
+**Architecture design:** Sales document intelligence using Microsoft Foundry, Azure OpenAI, Azure AI Document Intelligence, Content Understanding, Azure AI Search, SharePoint, and Copilot Studio. Production deployment and business results are not claimed for this design.
+
+The purpose is to turn approved proposals, client materials, PDFs, scanned documents, and images into searchable knowledge with grounded answers and source references.
+
+| Component | Design responsibility |
+| --- | --- |
+| SharePoint | Approved content, document versions, ownership, and source permissions |
+| Azure AI Document Intelligence | OCR and text/layout extraction from PDFs, scans, and images |
+| Content Understanding | Structured extraction from document and image inputs |
+| Azure AI Search | Text and vector retrieval with source metadata and access filtering |
+| Azure OpenAI / Microsoft Foundry | Grounded answers, model selection, evaluation, and monitoring |
+| Copilot Studio / Power Automate | User experience, approval routing, and controlled workflow actions |
+| Entra ID | Authentication, RBAC, and least-privilege access |
+
+### PDF, OCR, and image RAG approach
+
+1. Admit approved documents and retain source identity, version, classification, and access metadata.
+2. Extract native PDF text where available; use OCR for scanned pages and image text.
+3. Review extraction quality, tables, reading order, and low-confidence fields.
+4. Chunk content with document/page references, generate embeddings, and index text, vectors, and source metadata.
+5. Enforce document access during retrieval and generate answers with citations. Abstain when evidence is insufficient.
+6. Reprocess changed documents and remove withdrawn content; propagate permission changes.
+
+OCR-based text retrieval and true image RAG require different evaluation. Image RAG additionally needs visual representations and a model capable of interpreting retrieved images. Authentication alone does not enforce source-document permissions in a custom search index.
+
+### Sales use cases
+
+- Retrieve approved proposal language and supporting references.
+- Compare service or product information across approved documents.
+- Extract fields from scanned materials for human review.
+- Answer questions about PDF text, tables, and images with source traceability.
+- Draft reusable internal knowledge and proposal content for owner approval.
+
+## Responsible AI architecture
+
+The design combines approved knowledge grounding, Entra ID/RBAC, least privilege, human oversight, content safety, evaluation, monitoring, auditability, and data protection.
+
+| Risk | Proposed control | Validation before release |
+| --- | --- | --- |
+| Unsupported answers | Grounding, citations, and abstention | Known-answer and insufficient-evidence cases |
+| Unauthorized data exposure | Access-aware retrieval and permission synchronization | Cross-user access and revoked-permission tests |
+| Prompt injection | Treat retrieved documents as untrusted input; constrain tool execution | Malicious-document and tool-boundary tests |
+| OCR errors | Confidence review and original-page references | Scans, tables, and reading-order checks |
+| Unsafe agent actions | Human approval for consequential or external actions | Approval-bypass and denied-action cases |
+| Sensitive logging | Restricted logs and approved retention | Log-content and access review |
+| Model/prompt regression | Versioned evaluation and release gates | Repeat a fixed evaluation set before promotion |
+
+Before production, record extraction quality, retrieval relevance, citation accuracy, permission enforcement, prompt-injection resistance, latency, cost, and recovery results. Content safety complements authorization and human oversight. Public examples exclude client records, employer-owned code, credentials, and tenant identifiers.
+
 <details>
 <summary><strong>How to read this portfolio</strong></summary>
 
