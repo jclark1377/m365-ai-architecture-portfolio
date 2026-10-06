@@ -2,7 +2,7 @@
 
 [Back to portfolio](../README.md)
 
-Selected work across enterprise IT, Microsoft 365, applied AI, and independent consulting. These are professional experience summaries based on my resume and project records, updated September 20, 2026. They describe my contribution; employer-owned implementations and internal evidence are not distributed in this repository. Reference designs are labeled separately.
+Selected work across enterprise IT, Microsoft 365, applied AI, and independent consulting. These are professional experience summaries based on my resume and project records, updated October 6, 2026. They describe my contribution; employer-owned implementations and internal evidence are not distributed in this repository. Reference designs are labeled separately.
 
 ## Power Apps case studies
 
@@ -37,6 +37,27 @@ Scale figures describe the relevant estate or source inventory, not personal thr
 
 **Stack:** Copilot Studio, SharePoint Online, Power Automate, ManageEngine ServiceDesk.
 
+### Help Desk request and escalation flow
+
+Logical view of the reported implementation.
+
+```mermaid
+flowchart TD
+ U["Employee request"] --> A["Copilot Studio"]
+ A --> D{"Access issue or escalation needed?"}
+ D -->|No| K["Approved SharePoint knowledge"]
+ K --> E{"Useful grounded answer?"}
+ E -->|Yes| R["Answer employee"]
+ E -->|No| T["Review ticket subject and details"]
+ D -->|Yes| T
+ T --> C{"Employee confirms?"}
+ C -->|No| Edit["Edit details"]
+ Edit --> T
+ C -->|Yes| F["Power Automate ticket flow"]
+ F --> S["ManageEngine ServiceDesk"]
+ S --> Receipt["Return ticket reference"]
+```
+
 ### Power Platform governance and business workflows
 
 - Re-architected ownership of **162 Power Automate flows** using centralized service accounts, Solutions, connection references, and PowerShell-driven deployment.
@@ -45,6 +66,23 @@ Scale figures describe the relevant estate or source inventory, not personal thr
 - Recent SALT work separated new-request notification from assignment/completion processing and investigated unnecessary item updates and stalled runs. This remains an active troubleshooting effort in the latest project record.
 
 **Engineering emphasis:** Supportable ownership, explicit workflow states, reliable connector references, and validation of side effects.
+
+### Departmental request workflow
+
+Generalized intake pattern informed by SALT and business applications. Notifications depend on relevant changes.
+
+```mermaid
+flowchart TD
+ F["Power App or list form"] --> B["Required fields and business rules"]
+ B --> R["SharePoint request record"]
+ R --> N["New-request notification"]
+ R --> C{"Assignment or status changed?"}
+ C -->|Assigned| O["Notify assigned owner"]
+ C -->|Completed| U["Notify requester"]
+ C -->|No relevant change| S["No notification"]
+ O --> W["Process request and update status"]
+ W --> R
+```
 
 ### AI knowledge architecture
 
@@ -157,10 +195,75 @@ Updated October 6, 2026. This progression connects Windows endpoint engineering 
 **Business need:** Provide repeatable Windows provisioning for physical systems supporting pilots and aircraft mechanics, including systems requiring off-network installation.
 **My contribution:** Designed Windows deployment configurations, maintained the pilot training environment, and used MDT to install operating systems on flight simulators. The deployment work covered images, task sequences, application installation, driver handling, and validation. Windows 11 implementation is part of the endpoint design experience; specific rollout dates and fleet-wide completion are not claimed.
 **Architecture considerations:** Hardware and application compatibility, repeatable installation, constrained connectivity, support ownership, and recovery procedures. These considerations explain the design approach without publishing internal system details.
+
+
+#### Endpoint deployment flow
+
+Sanitized reconstruction of the deployment approach.
+
+```mermaid
+flowchart TD
+ B["Windows image, drivers, and apps"] --> M["MDT task sequence"]
+ M --> P["Pilot hardware validation"]
+ P --> C{"Compatible and ready?"}
+ C -->|No| R["Revise image or drivers"]
+ R --> P
+ C -->|Yes| O["Off-network installation"]
+ O --> T["Army tablets"]
+ O --> D["Physical desktops"]
+ O --> S["Flight simulators"]
+ T --> V["Validate and hand over"]
+ D --> V
+ S --> V
+```
+
 ### Enterprise migration and endpoint modernization
 My Lockheed Martin work connected Teams and enterprise data migration with Windows 11 upgrades. At DoD, my architecture contribution extended to modernization planning, migration sequencing, permissions, identity, device posture, pilots, exceptions, cutover, and post-migration verification. These experiences connect endpoint implementation to enterprise platform decisions.
+
+
+#### Migration validation and cutover
+
+Generalized delivery pattern informed by collaboration and data migration experience.
+
+```mermaid
+flowchart TD
+ I["Source inventory and dependencies"] --> M["Target structure and access mapping"]
+ M --> P["Pilot migration"]
+ P --> C{"Counts, metadata, and access pass?"}
+ C -->|No| R["Resolve exceptions"]
+ R --> P
+ C -->|Yes| A["Approved phased cutover"]
+ A --> V["Post-migration verification"]
+ V --> H["Operational handover"]
+ V -->|Unresolved defect| F["Remediation or recovery"]
+```
+
 ### Departmental AI, Copilot, and applications — proof of concept
 **Business need:** Let departments request agents and applications while retaining common identity, information ownership, deployment controls, and support processes.
 **Proposed design:** Departmental Copilot Studio agents and Power Apps use approved SharePoint or Dataverse data. Power Automate handles workflow actions. A proposed central MCP service exposes approved tools with Entra ID authentication and role-based authorization. Each tool validates access to the requested data and action.
 **Connection to delivered work:** The Help Desk assistant demonstrates knowledge grounding and escalation; SALT intake demonstrates assignment and completion workflows; Kudos demonstrates structured intake and Teams notifications; Engagement Letters demonstrates conditional forms and business rules. These projects inform the shared design.
 **Status:** Departmental architecture proof of concept. Central MCP deployment, organization-wide rollout, and measured business outcomes are not asserted. Validation should cover cross-department access, denied actions, approvals, audit records, failure recovery, latency, and usage cost.
+
+
+#### Departmental AI access and action boundaries
+
+Proposed proof-of-concept topology. Authorization is checked by the service for each action.
+
+```mermaid
+flowchart TD
+ U["Department user"] --> I["Entra ID identity"]
+ I --> E["Copilot Studio agent or Power App"]
+ E --> B["Proposed MCP tool boundary"]
+ B --> A{"Role, data, and action allowed?"}
+ A -->|No| D["Deny and audit"]
+ A -->|Read| R["Authorized SharePoint or Dataverse data"]
+ A -->|Write| V["Validate action and business rules"]
+ V --> P{"Approval required?"}
+ P -->|Yes| H["Business owner approval"]
+ P -->|No| F["Power Automate action"]
+ H -->|Approved| F
+ H -->|Rejected| D
+ F --> T["Audit, monitoring, and cost tracking"]
+ R --> T
+```
+
