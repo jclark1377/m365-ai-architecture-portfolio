@@ -71,6 +71,15 @@ Grounded support, controlled escalation, and proposed boundaries between AI reas
 </tr>
 </table>
 
+## Architecture diagrams
+
+- [Tablet, desktop, and flight-simulator deployment](case-studies/README.md#endpoint-deployment-flow)
+- [Migration validation and cutover](case-studies/README.md#migration-validation-and-cutover)
+- [Help Desk escalation](case-studies/README.md#help-desk-request-and-escalation-flow)
+- [Departmental request workflow](case-studies/README.md#departmental-request-workflow)
+- [Departmental AI access and action boundaries](case-studies/README.md#departmental-ai-access-and-action-boundaries)
+- [PDF and OCR retrieval](#document-retrieval-and-answer-flow)
+
 ## Follow the evidence
 
 **[Open the Project Evidence Portfolio →](evidence/README.md)**
@@ -131,6 +140,26 @@ The purpose is to turn approved proposals, client materials, PDFs, scanned docum
 6. Reprocess changed documents and remove withdrawn content; propagate permission changes.
 
 OCR-based text retrieval and true image RAG require different evaluation. Image RAG additionally needs visual representations and a model capable of interpreting retrieved images. Authentication alone does not enforce source-document permissions in a custom search index.
+
+### Document retrieval and answer flow
+
+Proposed design for PDF and OCR text retrieval. Visual image retrieval requires separate image representations and evaluation. Source permissions must be enforced during retrieval.
+
+```mermaid
+flowchart TD
+ S["Approved SharePoint PDFs and images"] --> E["Native text extraction or OCR"]
+ E --> Q{"Extraction quality accepted?"}
+ Q -->|No| H["Human review or reprocess"]
+ H --> E
+ Q -->|Yes| I["Chunks, embeddings, and source access metadata"]
+ I --> Search["Azure AI Search"]
+ U["Authenticated user query"] --> A["Enforce source-document permissions"]
+ A --> Search
+ Search --> M["Azure OpenAI grounded generation"]
+ M --> C{"Supporting evidence sufficient?"}
+ C -->|Yes| R["Answer with source citations"]
+ C -->|No| N["Abstain or escalate"]
+```
 
 ### Sales use cases
 
